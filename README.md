@@ -1,1 +1,13 @@
-# personal_english_partner
+## Personal Spoken English Partner
+
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```

@@ -3,7 +3,7 @@
 Step 1: clone this repository:
 
 ```bash
-git clone https://github.com/iamgauravbisht/personal_english_partner.git
+git clone repo_link
 ```
 
 Step 2: install dependencies:

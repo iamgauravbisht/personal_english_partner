@@ -29,3 +29,7 @@ pnpm dev
 # or
 bun dev
 ```
+# The work is under progress
+## task list
+- [ ] build auth feature 
+- [ ] build stripe payment flow.

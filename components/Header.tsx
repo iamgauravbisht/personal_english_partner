@@ -1,31 +1,38 @@
+import Link from "next/link";
 const Header = () => {
   return (
     <header className="w-full h-14 bg-customsecondary border-b-2 border-black sticky top-0">
       <div className="flex justify-between items-center h-full max-w-5xl mx-auto px-4">
         <div className="flex items-center ">
-          <a href="/" className="text-xl font-bold">
+          <Link href="/" className="text-xl font-bold">
             Spoken English Partner
-          </a>
+          </Link>
         </div>
         <div className="flex items-center justify-between gap-5 ">
-          <a
+          <Link
             href="/getstarted"
             className="text-md font-bold border-2 px-4 py-2 rounded-lg hover:bg-customprimary hover:text-white"
           >
             Get Started
-          </a>
-          <a
-            href="/login"
+          </Link>
+          <Link
+            href="/pricing"
+            className="text-md font-bold border-2 px-4 py-2 rounded-lg  hover:bg-customprimary hover:text-white"
+          >
+            Pricing
+          </Link>
+          <Link
+            href="/account/login"
             className="text-md font-bold border-2 px-4 py-2 rounded-lg  hover:bg-customprimary hover:text-white"
           >
             Login
-          </a>
-          <a
-            href="/register"
+          </Link>
+          <Link
+            href="/account/register"
             className="text-md font-bold border-2 px-4 py-2 rounded-lg  hover:bg-customprimary hover:text-white"
           >
             Register
-          </a>
+          </Link>
         </div>
       </div>
     </header>

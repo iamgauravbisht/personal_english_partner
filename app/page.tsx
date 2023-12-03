@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import spoken from "../public/assets/spoken.svg";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-20 ">
+    <main className="flex flex-col items-center justify-between p-20 ">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex border-2 border-white lg:flex-col gap-12 p-24">
         <section className="max-w-3xl mx-auto text-center flex flex-col items-center">
-          <h1 className="text-3xl  font-semibold underline decoration-dashed	mb-6">
+          <h1 className="text-4xl text-customsecondary font-semibold underline decoration-dashed	mb-5">
             Unlock Fluent English with Your AI Language Companion
           </h1>
           <h4 className="text-lg font-semibold underline decoration-solid	mb-6">
@@ -18,23 +19,22 @@ export default function Home() {
             height={250}
             alt="Picture of the author"
           />
-
           <h2 className="text-2xl font-semibold underline decoration-wavy	mb-6">
             Start Your English Fluency Journey Today
           </h2>
           <div className="flex gap-10 justify-center">
-            <a
-              href="/login"
+            <Link
+              href="/account/login"
               className="text-md font-bold border-2 px-4 py-2 rounded-lg  hover:bg-customsecondary hover:text-customprimary"
             >
               Login
-            </a>
-            <a
-              href="/register"
+            </Link>
+            <Link
+              href="/account/register"
               className="text-md font-bold border-2 px-4 py-2 rounded-lg  hover:bg-customsecondary hover:text-customprimary"
             >
               Register
-            </a>
+            </Link>
           </div>
         </section>
         <section className="max-w-3xl mx-auto">

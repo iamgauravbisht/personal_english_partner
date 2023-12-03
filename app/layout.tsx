@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -19,11 +20,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-customprimary text-white`}>
+      <body
+        className={`${inter.className} bg-customprimary text-white min-h-screen flex flex-col justify-between`}
+      >
         <Header />
         {children}
         <Footer />
       </body>
+      <Script
+        src="https://js.stripe.com/v3/pricing-table.js"
+        strategy="afterInteractive"
+      />
     </html>
   );
 }
